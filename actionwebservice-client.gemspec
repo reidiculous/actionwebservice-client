@@ -19,8 +19,6 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
 
   s.files = [ "Rakefile", "setup.rb", "README", "TODO", "CHANGELOG", "MIT-LICENSE" ]
-  spec.files += Dir['lib/**/*.rb']
-  spec.files += Dir['test/**/*']
-  spec.files += Dir['generators/**/*']
-  spec.files += Dir['examples/**/*']
+  s.files += Dir['lib/**/*.rb']
+  s.files += Dir['test/**/*']
 end
