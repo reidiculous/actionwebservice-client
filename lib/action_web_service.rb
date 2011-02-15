@@ -57,15 +57,15 @@ ActionWebService::Base.class_eval do
   include ActionWebService::Invocation
 end
 
-ActionController::Base.class_eval do
-  include ActionWebService::Protocol::Discovery
-  include ActionWebService::Protocol::Soap
-  include ActionWebService::Protocol::XmlRpc
-  include ActionWebService::Container::Direct
-  include ActionWebService::Container::Delegated
-  include ActionWebService::Container::ActionController
-  include ActionWebService::Invocation
-  include ActionWebService::Dispatcher
-  include ActionWebService::Dispatcher::ActionController
-  include ActionWebService::Scaffolding
-end
+# ActionController::Base.class_eval do
+#   include ActionWebService::Protocol::Discovery
+#   include ActionWebService::Protocol::Soap
+#   include ActionWebService::Protocol::XmlRpc
+#   include ActionWebService::Container::Direct
+#   include ActionWebService::Container::Delegated
+#   include ActionWebService::Container::ActionController
+#   include ActionWebService::Invocation
+#   include ActionWebService::Dispatcher
+#   include ActionWebService::Dispatcher::ActionController
+#   include ActionWebService::Scaffolding
+# end
